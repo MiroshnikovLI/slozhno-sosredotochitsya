@@ -38,23 +38,23 @@
         </ul>
       </nav>
       <div class="decor-rec" aria-hidden="true"></div>
-      <h1 class="header__title">no focus</h1>
+     <h1 class="header__title">no focus</h1>
       <div class="header__text">
         <p>Что делать, когда не можешь делать ничего</p>
         <p>Или почему нам так сложно сконцентрироваться, особенно когда очень надо</p>
       </div>
     </header>
-    <main>
-      <section> <!-- display: grid  -->
+  <main class="main">
+      <section class="section"> 
         <h3 class="section-title" aria-label="Заголовок секции">Почему сосредоточиться так сложно</h3>
-        <div class="section-card">  <!-- display: flex -->
-          <ul class="section-card__list" aria-label="Список из двух пунктов"> <!-- display: flex -->
+        <div class="section-card">  
+          <ul class="section-card__list" aria-label="Список из двух пунктов"> 
             <li class="section-card__list__items" aria-label="Пункт первый из двух">
               <article class="card">
                 <h5 class="card__title" aria-label="Заголовок первого пункта">Многозадачность</h5>
                 <p class="card__text" aria-label="Описание пункта">Особенно сложно сосредоточиться, когда задач много и все они — важные. Где же легендарная многозадачность, когда она так нужна вам (и всем нанимающим менеджерам этого мира)? А дело в том, что её просто не существует. Исследователи 
-                  <a class="link" href="#0" target="_blank">выяснили</a>
-                  , что мозгу тяжело концентрироваться даже на двух делах одновременно. А когда в поле внимания попадает несколько важных задач, организм паникует и выделяет кортизол и адреналин — «гормоны стресса». Из-за этого мы работаем невнимательно: ошибаемся и быстро устаём.</p>
+                  <a class="link" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7075496/" target="_blank">выяснили</a>,
+                   что мозгу тяжело концентрироваться даже на двух делах одновременно. А когда в поле внимания попадает несколько важных задач, организм паникует и выделяет кортизол и адреналин — «гормоны стресса». Из-за этого мы работаем невнимательно: ошибаемся и быстро устаём.</p>
               </article>
             </li>
             <li class="section-card__list__items" aria-label="Пункт второй из двух">
@@ -66,7 +66,7 @@
           </ul>
         </div>
       </section>
-      <section>
+      <section class="section">
         <h3 class="section-title" aria-label="Заголовок секции">Что снижает концентрацию внимания?</h3>
         <div class="section-card">
           <ul class="section-card__list" aria-label="Список из трёх пунктов">
@@ -91,7 +91,7 @@
           </ul>
         </div>
       </section>
-      <section>
+      <section class="section">
         <h3 class="section-title" aria-label="Заголовок секции">Как концентрироваться лучше, чем золотая рыбка (то есть дольше трёх секунд)</h3>
         <div class="section-card">
           <h4 class="section-card__title" aria-label="Заголовок списка">5 простых (на самом деле не очень) советов</h4>
@@ -112,8 +112,8 @@
               <article class="card">
                 <h5 class="card__title" aria-label="Заголовок третьего пункта">Прогуляйтесь</h5>
                 <p class="card__text" aria-label="Описание пункта">Или даже пробегитесь. Лучше найти парк или лес: один эксперимент 
-                  <a class="link" href="#0" target="_blank">показал</a>
-                  , что созерцание природы повышает концентрацию, в то время как после просмотра городских пейзажей она наоборот понижается. Можно совместить прогулку с физическими упражнениями или бегом — так в мозг поступит ещё больше кислорода и он будет лучше работать. Но и простая двадцатиминутная прогулка — тоже отличный вариант.</p>
+                <a class="link" href="https://www.sciencedirect.com/science/article/abs/pii/S0272494415000328" target="_blank">показал</a>,
+                 что созерцание природы повышает концентрацию, в то время как после просмотра городских пейзажей она наоборот понижается. Можно совместить прогулку с физическими упражнениями или бегом — так в мозг поступит ещё больше кислорода и он будет лучше работать. Но и простая двадцатиминутная прогулка — тоже отличный вариант.</p>
               </article>
             </li>
             <li class="section-card__list__items" aria-label="Четыертый пункт из пяти">
@@ -131,10 +131,10 @@
           </ul>
         </div>
       </section>
-      <section>
-        <div class="section-card">
-          <h4 class="section-card__title" aria-label="Заголовок списка"></h4>
-          <ul class="section-card__list" aria-label="Список из питя изображение созданых при помощи Яндекс GPT">
+      <section class="section">
+        <div class="section-card section-card--img-gap">
+          <h4 class="section-card__title" aria-label="Заголовок списка">А можно в картинках?</h4>
+          <ul class="section-card__list section-card__list--img-gap" aria-label="Список из питя изображение созданых при помощи Яндекс GPT">
             <li class="section-card__list__items" aria-label="Первое изображение из пяти">
               <article class="card">
                 <img class="card__images" src="./images/sunset.png" alt="На изображении представлен минималистический пейзаж. На фоне заката возле горного озера летят птицы">
@@ -164,8 +164,8 @@
         </div>
       </section>
     </main>
-    <footer>
-      <h2 class="footer-title decorated-zone">focus</h2>
+    <footer class="footer decorated-zone">
+      <h2 class="footer-title">focus</h2>
     </footer>
 
     <script src="./scripts/script.js"></script>

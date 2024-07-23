@@ -1,0 +1,236 @@
+/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+
+.page {
+  display: grid;
+  grid-template-columns: 355px;
+  gap: 40px;
+  padding-inline: 10px;
+  padding-block: 10px;
+  font-family: 'IBM Plex mono', sans-serif;
+  font-weight: 400;
+  background-color: var(--bg-global);
+  background-image: url(../images/cover-image-dark.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center 0;
+  background-attachment: fixed;
+}
+
+.decorated-zone {
+  position: relative; 
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    inline-size: 25px;
+    block-size: 25px;
+    border-block-start: 1px solid var(--bd-accent-color);
+    border-inline-end: 1px solid var(--bd-accent-color);
+  }
+  
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    inline-size: 25px;
+    block-size: 25px;
+    border-block-end: 1px solid var(--bd-accent-color);
+    border-inline-start: 1px solid var(--bd-accent-color);
+  }
+
+}
+
+.decor-rec {
+  display: inline-block;
+  position: absolute;
+  inline-size: 52px;
+  top: 1px;
+  right: 9px;
+
+  &::before  {
+    content: 'rec';
+    font-size: var(--s-font-size);
+    text-transform: uppercase;
+    color: var(--primery-color);
+  }
+
+  &::after{
+    content: '';
+    position: absolute;
+    top: 7px;
+    right: 0;
+    inline-size: 9px;
+    block-size: 9px;
+    border-radius: 50%;
+    background-color: var(--bg-accent-color);
+    box-shadow: 0 0 4px 2px #FF0070;
+  }
+}
+
+.link {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  text-shadow: 2px 2px 0 var(--tx-sh-accent);
+  border-block-end: 1px solid transparent;
+
+  &:hover {
+    cursor: pointer;
+    border-block-end: 1px;
+    border-block-end-style: solid;
+    border-block-end-color: inherit;
+  }
+
+}
+
+/* Header */
+
+.header {
+  display: grid;
+  grid-template-rows: 161px 260px 225px;
+}
+
+.header__theme-menu {
+  justify-self: end;
+  align-self: end;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header__theme-menu-item {
+  inline-size: 70px;
+  block-size: 26px;
+}
+
+.header__theme-menu-button {
+  inline-size: 100%;
+  block-size: 100%;
+  text-align: center;
+  color: var(--primery-color);
+  text-transform: lowercase;
+  background-color: transparent;
+  border: none;
+  outline: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.header__theme-menu-button_active {
+  border: 1px;
+  border-style: solid;
+  border-color: inherit;
+
+  &:hover {
+    pointer-events: none;
+  }
+}
+
+.header__title {
+  align-self: end;
+  color: var(--primery-accent-color);
+  font-size: var(--xl-font-size);
+  line-height: var(--xl-lh-size);
+  text-shadow: 4px 4px 0 var(--tx-sh-accent-color);
+}
+
+.header__text {
+  align-self: center;
+  display: block;
+  inline-size: 355px;
+  block-size: 117px;
+  color: var(--global-color);
+  font-size: var(--s-font-size);
+  line-height: var(--s-lh-size);
+  background-color: var(--bg-accent-color);
+}
+
+/* main */
+
+.main {
+  display: grid;
+  gap: 50px;
+  padding-block-start: 11px;
+}
+
+.section {
+  display: grid;
+  grid-template-columns: 355px;
+  gap: 22px;
+}
+
+.section-title {
+  color: var(--primery-color);
+  font-size: var(--s-font-size);
+  font-weight: 700;
+  line-height: var(--s-lh-size);
+}
+
+.section-card {
+  display: grid;
+  gap: 20px;
+  font-size: var(--s-font-size);
+  font-weight: 700;
+  line-height: var(--s-lh-size);
+}
+
+.section-card--img-gap {
+  gap: 11px;
+}
+
+.section-card__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section-card__list--img-gap {
+  gap: 11px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  inline-size: 355px;
+}
+
+.card__title {
+  color: var(--accent-color);
+  letter-spacing: 2px;
+  background-color: var(--bg-accent-color);
+}
+
+.card__text {
+  color: var(--global-color);
+}
+
+.section-card__title {
+  color: var(--accent-color);
+  background-color: var(--bg-accent-color);
+}
+
+/* footer */
+
+.footer {
+  display: grid;
+  grid-template-rows: 650px;
+  place-items: center;
+  margin-block-start: 8px;
+}
+
+.footer-title {
+  color: var(--primery-accent-color);
+  font-size: var(--xl-font-size);
+  font-weight: 700;
+  line-height: var(--xl-lh-size);
+  text-shadow: 4px 4px 0 var(--tx-sh-accent-color);
+}
