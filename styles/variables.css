@@ -3,6 +3,13 @@
   и их переопределение под различные устройства
 */
 :root {
+
+  
+  /* decoration color */
+
+  --rec-color: #ff0070;
+  --decor-line: #ff0070;
+
   /* color fonts */
 
   --global-color: #f1b2ce;
@@ -36,4 +43,8 @@
 
   --s-lh-size: 23.4px;
   --xl-lh-size: 95.7px;
+
+  /* background-images */
+
+  --bg-images: url(../images/cover-image-darc.png);
 }

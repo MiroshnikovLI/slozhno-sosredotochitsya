@@ -9,4 +9,31 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+
+  /* decoration color */
+
+  --rec-color: transparent;
+  --decor-line: #000028;
+
+  /* color fonts */
+
+  --global-color: #353430;
+  --primery-color: #353430;
+  --accent-color: #000028;
+  --primery-accent-color: #FFC2E6;
+
+  /* color background */
+
+  --bg-accent-color: #FF8DCB;
+
+  /* color text-shadow */
+
+  --tx-sh-accent-color: #FF8DCB;
+
+  /* background-images */
+
+  --bg-images: url(../images/cover-image-light.png);
+ 
+  transition: color .3s;
+
 }

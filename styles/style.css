@@ -8,8 +8,8 @@
   padding-block: 10px;
   font-family: 'IBM Plex mono', sans-serif;
   font-weight: 400;
-  background-color: var(--bg-global);
-  background-image: url(../images/cover-image-dark.png);
+  background-color: var(--bg-global-color);
+  background-image: var(--bg-images);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center 0;
@@ -26,8 +26,8 @@
     right: 0;
     inline-size: 25px;
     block-size: 25px;
-    border-block-start: 1px solid var(--bd-accent-color);
-    border-inline-end: 1px solid var(--bd-accent-color);
+    border-block-start: 1px solid var(--decor-line);
+    border-inline-end: 1px solid var(--decor-line);
   }
   
   &::after {
@@ -37,8 +37,8 @@
     left: 0;
     inline-size: 25px;
     block-size: 25px;
-    border-block-end: 1px solid var(--bd-accent-color);
-    border-inline-start: 1px solid var(--bd-accent-color);
+    border-block-end: 1px solid var(--decor-line);
+    border-inline-start: 1px solid var(--decor-line);
   }
 
 }
@@ -54,7 +54,7 @@
     content: 'rec';
     font-size: var(--s-font-size);
     text-transform: uppercase;
-    color: var(--primery-color);
+    color: var(--rec-color);
   }
 
   &::after{
@@ -65,8 +65,8 @@
     inline-size: 9px;
     block-size: 9px;
     border-radius: 50%;
-    background-color: var(--bg-accent-color);
-    box-shadow: 0 0 4px 2px #FF0070;
+    background-color: var(--rec-color);
+    box-shadow: 0 0 4px 2px var(--rec-color);
   }
 }
 
