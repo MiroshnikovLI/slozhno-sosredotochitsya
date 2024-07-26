@@ -12,7 +12,6 @@
 
   /* decoration color */
 
-  --rec-color: #ff0070;
   --decor-line: #ff0070;
  
   /* color fonts */
@@ -27,10 +26,6 @@
   --bg-global-color: #000028;
   --bg-accent-color: #ff0070;
 
-  /* color border */
-
-  --bd-accent-color: #ff0070;
-
   /* color box-shadow */
 
   --sh-accent-color: #ff0070;
@@ -39,10 +34,90 @@
 
   --tx-sh-accent-color: #ff0070;
 
-  /* background-images */
+  /* bacground images */
 
-  --bg-images: url(../images/cover-image-darc.png);
+  background-image: url(../images/cover-image-dark.png);
 
+  /* opacity */
 
-  transition: color .3s;
+  --opacity: 1;
+
+}
+
+@media (prefers-color-scheme: darck) {
+
+  * {
+    transition: color .3s, background .3s;
+  }
+
+  *::before {
+    transition: border .3s;
+  }
+
+  *::after {
+    transition: border .3s;
+  }
+
+  .page {
+    background-color: #000028;;
+    background-image: url(../images/cover-image-dark.png);
+  }
+
+  .decorated-zone {
+      &::before {
+        border-block-start-color: #ff0070;
+        border-inline-end-color: #ff0070;
+      }
+
+      &::after {
+        border-block-end-color: #ff0070;
+        border-inline-start-color: #ff0070;
+      }
+  }
+
+  .decor-rec {
+    opacity: 1;
+    transition: opacity .7s;
+  }
+
+  .link {
+    text-shadow: 2px 2px 0 #ff0070;
+  }
+
+  .header__theme-menu-button {
+    color: #ff0070;
+  }
+
+  .header__title {
+    color: #db00ff;
+    text-shadow: 4px 4px 0 #ff0070;
+  }
+
+  .header__text {
+    color: #f1b2ce;
+    background-color: #ff0070;
+  }
+
+  .section-title {
+    color: #ff0070;
+  }
+
+  .card__title {
+    color: #000028;
+  }
+
+  .card__text {
+    color: #f1b2ce;
+  }
+
+  .section-card__title {
+    color: #000028;
+    background-color: #ff0070;
+  }
+
+  .footer-title {
+    color: #db00ff;
+    text-shadow: 4px 4px 0 #ff0070;
+  }
+
 }

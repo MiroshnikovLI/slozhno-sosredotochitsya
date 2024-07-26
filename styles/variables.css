@@ -44,7 +44,10 @@
   --s-lh-size: 23.4px;
   --xl-lh-size: 95.7px;
 
-  /* background-images */
+  /* opacity */
 
-  --bg-images: url(../images/cover-image-darc.png);
+  --opacity: 1;
+
 }
+
+

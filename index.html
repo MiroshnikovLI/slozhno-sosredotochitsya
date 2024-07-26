@@ -137,27 +137,47 @@
           <ul class="section-card__list section-card__list--img-gap" aria-label="Список из питя изображение созданых при помощи Яндекс GPT">
             <li class="section-card__list__items" aria-label="Первое изображение из пяти">
               <article class="card">
-                <img class="card__images" src="./images/sunset.png" alt="На изображении представлен минималистический пейзаж. На фоне заката возле горного озера летят птицы">
+                <picture>    
+                  <source srcset="./images/sunset.avif" type="image/avif">
+                  <source srcset="./images/sunset.webp" type="image/webp">
+                  <img class="card__images" loading="lazy" src="./images/sunset.png" alt="На изображении представлен минималистический пейзаж. На фоне заката возле горного озера летят птицы">
+                </picture>
               </article>
             </li>
             <li class="section-card__list__items" aria-label="Второе изображение из пяти">
               <article class="card">
-                <img class="card_images" src="./images/ice-cream.png" alt="На изображении представлены милые рисунки еды в стиле каваи.">
-              </article>
+                <picture>
+                  <source srcset="./images/ice-cream.avif" type="image/avif" />
+                  <source srcset="./images/ice-cream.webp" type="image/webp" />
+                  <img class="card_images" loading="lazy" src="./images/ice-cream.png" alt="На изображении представлены милые рисунки еды в стиле каваи.">
+                </picture>
+               </article>
             </li>
             <li class="section-card__list__items" aria-labe="Третья картинка из пяти">
               <article class="card">
-                <img class="card__images" src="./images/tape.png" alt="На изображении представлена кассета.">
+                <picture>
+                  <source srcset="./images/tape.avif" type="image/avif" />
+                  <source srcset="./images/tape.webp" type="image/webp" />
+                  <img class="card__images" loading="lazy" src="./images/tape.png" alt="На изображении представлена кассета.">
+                </picture>
               </article>
             </li>
             <li class="section-card__list__items" aria-label="Четвертое изображение из пяти">
               <article class="card">
-                <img class="card__images" src="./images/books.png" alt="На изображение представлены книги">
+                <picture>
+                  <source srcset="./images/books.avif" type="image/avif" />
+                  <source srcset="./images/books.webp" type="image/webp" />
+                  <img class="card__images" loading="lazy" src="./images/books.png" alt="На изображение представлены книги">
+                </picture>
               </article>
             </li>
             <li class="section-card__list__items" aria-label="Пятое изображение из пяти">
               <article class="card">
-                <img class="card__image" src="./images/street.png" alt="На изображение представлена улица">
+                <picture>
+                  <source srcset="./images/street.avif" type="image/avif">
+                  <source srcset="./images/street.webp" type="image/webp">
+                  <img class="card__image" loading="lazy" src="./images/street.png" alt="На изображение представлена улица">
+                </picture>
               </article>
             </li>
           </ul>
