@@ -1,11 +1,27 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
+* {
+  transition: color .3s, background .3s, opaticy .7s;
+}
+
+*::before {
+  transition: border .3s;
+}
+
+*::after {
+  transition: border .3s;
+}
+
+html {
+  display: flex;
+  justify-content: center;
+}
+
 .page {
   display: grid;
-  grid-template-columns: 355px;
+  grid-template-columns: minmax(355px, 1024px);
   gap: 40px;
-  padding-inline: 10px;
-  padding-block: 10px;
+  padding: 10px;
   font-family: 'IBM Plex mono', sans-serif;
   font-weight: 400;
   background-color: var(--bg-global-color);
@@ -18,7 +34,6 @@
 
 .decorated-zone {
   position: relative; 
-  transition: opaticy .7s;
   
   &::before {
     content: '';
@@ -51,6 +66,7 @@
   top: 1px;
   right: 9px;
   opacity: var(--opacity);
+  transition: opacity .7s;
 
   &::before  {
     content: 'rec';
@@ -218,6 +234,10 @@
 .section-card__title {
   color: var(--accent-color);
   background-color: var(--bg-accent-color);
+}
+
+.card__images {
+  inline-size: 100px;
 }
 
 /* footer */

@@ -87,7 +87,6 @@
 
   .decor-rec {
     opacity: 0;
-    transition: opacity .7s;
   }
 
   .link {
