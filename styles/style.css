@@ -19,7 +19,7 @@ html {
 
 .page {
   display: grid;
-  grid-template-columns: minmax(355px, 1024px);
+  grid-template-columns: 355px;
   gap: 40px;
   padding: 10px;
   font-family: 'IBM Plex mono', sans-serif;
@@ -102,6 +102,20 @@ html {
     border-block-end-color: inherit;
   }
 
+}
+
+.card__images {
+  inline-size: 100%;
+  block-size: 100%;
+}
+
+.outline-focus:focus {
+  outline: none;
+}
+
+.outline-focus:has(:focus-visible) {
+  ontline: 1px solid red;
+  outline-offset: 3px;
 }
 
 /* Header */
@@ -234,10 +248,6 @@ html {
 .section-card__title {
   color: var(--accent-color);
   background-color: var(--bg-accent-color);
-}
-
-.card__images {
-  inline-size: 100px;
 }
 
 /* footer */
