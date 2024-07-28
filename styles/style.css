@@ -19,7 +19,7 @@
 .page {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 30px;
   font-family: 'IBM Plex mono', sans-serif;
   font-weight: 400;
   background-color: var(--bg-global-color);
@@ -36,7 +36,7 @@
   &::after {
     content: '';
     position: absolute;
-    bottom: 0;
+    bottom: var(--global-padding);
     left: var(--global-padding);
     inline-size: 25px;
     block-size: 25px;
@@ -118,8 +118,8 @@
 .header {
   display: grid;
   grid-template-rows: 0.7fr 1.1fr 1fr;
-  padding: var(--global-padding) var(--global-padding) 0 var(--global-padding);
-  block-size: calc(100vh - var(--global-padding));
+  padding: var(--global-padding);
+  block-size: 100vh;
 }
 
 .header__theme-menu {
@@ -179,8 +179,6 @@
 .header__text {
   align-self: center;
   display: block;
-  inline-size: 355px;
-  block-size: 117px;
   padding-inline-start: 2px;
   color: var(--accent-color);
   font-size: var(--s-font-size);
@@ -197,6 +195,7 @@
   row-gap: 50px;
   padding-block-start: 11px;
   padding-inline-end: var(--global-padding);
+  padding-block-end: var(--global-padding); 
   padding-inline-start: var(--global-padding);
 }
 
@@ -262,8 +261,8 @@
 .footer {
   display: grid;
   place-items: center;
-  block-size: calc(100vh - var(--global-padding));
-  padding-inline-end: var(--global-padding);
+  block-size: 100vh;
+  padding: var(--global-padding);
   padding-inline-start: var(--global-padding);
 }
 
@@ -310,6 +309,10 @@
 }
 
 @media (width >= 450px) and (width <= 768px) {
+
+  .page {
+    gap: 20px;
+  }
 
   /* header */
 
@@ -386,6 +389,10 @@
 }
 
 @media (width >= 769px) {
+
+  .page {
+    gap: 20px;
+  }
 
   /* header */
 
@@ -472,7 +479,7 @@
   /* footer */
 
   .footer {
-    margin-block-start: clamp(0.5rem, -1.4036rem + 8.1218vw, 2.5rem);
+     margin-block-start: clamp(0rem, -1.1897rem + 5.0761vw, 1.25rem);
   }
 
   .footer-title {
