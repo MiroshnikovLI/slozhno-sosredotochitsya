@@ -56,14 +56,6 @@
       background 0.3s;
   }
 
-  .decorated-zone::before {
-    transition: border 0.3s;
-  }
-
-  .decorated-zone::after {
-    transition: border 0.3s;
-  }
-
   .page {
     background-color: #fff1f7;
     background-image: url("../images/cover-image-light.png");
@@ -73,11 +65,13 @@
     &::before {
       border-block-start-color: #000028;
       border-inline-end-color: #000028;
+      transition: border 0.3s;
     }
 
     &::after {
       border-block-end-color: #000028;
       border-inline-start-color: #000028;
+      transition: border 0.3s;
     }
   }
 

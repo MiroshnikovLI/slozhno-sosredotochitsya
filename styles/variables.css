@@ -3,6 +3,7 @@
   и их переопределение под различные устройства
 */
 :root {
+
   /* decoration color */
 
   --rec-color: #ff0070;
@@ -45,4 +46,8 @@
   /* opacity */
 
   --opacity: 1;
+
+  /* padding size */
+
+  --global-padding: clamp(0.625rem, 0.0332rem + 2.5316vw, 1.25rem);
 }

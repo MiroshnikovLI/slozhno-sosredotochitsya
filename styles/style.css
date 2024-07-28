@@ -28,7 +28,7 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
-  padding: 10px;
+  padding: var(--global-padding);
   font-family: 'IBM Plex mono', sans-serif;
   font-weight: 400;
   background-color: var(--bg-global-color);
@@ -123,7 +123,8 @@
 
 .header {
   display: grid;
-  grid-template-rows: 161px 260px 227px;
+  grid-template-rows: 0.7fr 1.1fr 1fr;
+  block-size: calc(100vh - (var(--global-padding) * 2));
 }
 
 .header__theme-menu {
@@ -225,7 +226,7 @@
 
 .section-card--img-grid {
   grid-column: 1 / end;
-  gap: clamp(0.5625rem, -0.0918rem + 2.7919vw, 1.25rem);
+  gap: clamp(0.3125rem, -0.5752rem + 3.7975vw, 1.25rem);
 }
 
 .section-card__list {
@@ -251,12 +252,10 @@
 }
 
 .card__text {
-  padding-inline-start: 2px;
   color: var(--global-color);
 }
 
 .section-card__title {
-  padding-inline-start: 2px;
   color: var(--accent-color);
   background-color: var(--bg-accent-color);
 }
@@ -265,8 +264,8 @@
 
 .footer {
   display: grid;
-  grid-template-rows: 645px;
   place-items: center;
+  block-size: calc(100vh - (var(--global-padding) * 2));
   margin-block-start: 8px;
 }
 
@@ -313,18 +312,11 @@
 }
 
 @media (width >= 450px) and (width <= 768px) {
-  .page {
-    padding: clamp(0.625rem, 0.0271rem + 2.551vw, 1.25rem);
-  }
 
   /* header */
 
   .header {
-    grid-template-rows: clamp(10.0625rem, 3.665rem + 27.2959vw, 16.75rem) clamp(
-        16.25rem,
-        15.4727rem + 3.3163vw,
-        17.0625rem
-      ) clamp(14.0625rem, 1.0882rem + 55.3571vw, 27.625rem);
+    grid-template-rows: 1.2fr 1.2fr 2fr;
   }
 
   .header__title {
@@ -391,20 +383,16 @@
   /* footer */
 
   .footer {
-    grid-template-rows: clamp(40.3125rem, 20.0872rem + 86.2944vw, 61.5625rem);
     margin-block-start: clamp(0.5rem, -1.4036rem + 8.1218vw, 2.5rem);
   }
 }
 
 @media (width >= 769px) {
-  .page {
-    padding: clamp(0.625rem, 0.0271rem + 2.551vw, 1.25rem);
-  }
 
   /* header */
 
   .header {
-    grid-template-rows: 190px 352px 186px;
+    grid-template-rows: 1fr 2fr 1fr;
   }
 
   .header__theme-menu {
@@ -486,7 +474,6 @@
   /* footer */
 
   .footer {
-    grid-template-rows: 730px;
     margin-block-start: clamp(0.5rem, -1.4036rem + 8.1218vw, 2.5rem);
   }
 
