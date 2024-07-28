@@ -226,7 +226,7 @@
 
 .section-card--img-grid {
   grid-column: 1 / end;
-  gap: clamp(0.3125rem, -0.5752rem + 3.7975vw, 1.25rem);
+  gap: clamp(0.5625rem, -0.0918rem + 2.7919vw, 1.25rem);
 }
 
 .section-card__list {
@@ -235,7 +235,7 @@
 }
 
 .section-card__list--img-grid {
-  gap: clamp(0.375rem, -0.4578rem + 3.5533vw, 1.25rem);
+  gap: clamp(0.3125rem, -0.5798rem + 3.8071vw, 1.25rem);
 }
 
 .card {
