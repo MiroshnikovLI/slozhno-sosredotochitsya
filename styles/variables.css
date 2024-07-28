@@ -49,5 +49,6 @@
 
   /* padding size */
 
-  --global-padding: clamp(0.625rem, 0.0332rem + 2.5316vw, 1.25rem);
+  --global-padding: clamp(0.625rem, 0.0301rem + 2.5381vw, 1.25rem);
+
 }

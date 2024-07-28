@@ -36,7 +36,7 @@
   &::after {
     content: '';
     position: absolute;
-    bottom: var(--global-padding);
+    bottom: 0;
     left: var(--global-padding);
     inline-size: 25px;
     block-size: 25px;
@@ -62,8 +62,8 @@
   display: inline-block;
   position: absolute;
   inline-size: 52px;
-  top: 1px;
-  right: 9px;
+  top: calc(var(--global-padding) + 1px);
+  right: calc(var(--global-padding) + 9px);
   opacity: var(--opacity);
   transition: opacity 0.7s;
 
@@ -106,6 +106,7 @@
 }
 
 .card__images {
+  vertical-align: middle;
   inline-size: 100%;
   block-size: 100%;
   object-fit: cover;
@@ -117,8 +118,8 @@
 .header {
   display: grid;
   grid-template-rows: 0.7fr 1.1fr 1fr;
-  padding: var(--global-padding);
-  block-size: calc(100vh - (var(--global-padding) * 2));
+  padding: var(--global-padding) var(--global-padding) 0 var(--global-padding);
+  block-size: calc(100vh - var(--global-padding));
 }
 
 .header__theme-menu {
@@ -231,7 +232,7 @@
 }
 
 .section-card__list--img-grid {
-  gap: clamp(0.3125rem, -0.5798rem + 3.8071vw, 1.25rem);
+  gap: clamp(0.625rem, 0.0301rem + 2.5381vw, 1.25rem);
 }
 
 .card {
@@ -261,8 +262,7 @@
 .footer {
   display: grid;
   place-items: center;
-  block-size: calc(100vh - (var(--global-padding) * 2));
-  margin-block-start: 8px;
+  block-size: calc(100vh - var(--global-padding));
   padding-inline-end: var(--global-padding);
   padding-inline-start: var(--global-padding);
 }
@@ -381,7 +381,7 @@
   /* footer */
 
   .footer {
-    margin-block-start: clamp(0.5rem, -1.4036rem + 8.1218vw, 2.5rem);
+    margin-block-start: clamp(0rem, -1.1897rem + 5.0761vw, 1.25rem);
   }
 }
 
