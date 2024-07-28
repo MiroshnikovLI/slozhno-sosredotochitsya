@@ -19,25 +19,12 @@
   --global-color: #353430;
   --primery-color: #353430;
   --accent-color: #000028;
-  --primery-accent-color: #FFC2E6;
+  --primery-accent-color: #ffc2e6;
 
   /* color background */
 
+  --bg-global-color: #fff1f7;
   --bg-accent-color: #FF8DCB;
-  --bg-global-color: #FFF1F7;
-
-  /* color text-shadow */
-
-  --tx-sh-accent-color: #FF8DCB; 
-
-  /* color background */
-
-  --bg-global-color: #FFF1F7;
-  --bg-accent-color: #ff0070;
-
-  /* color box-shadow */
-
-  --sh-accent-color: #ff0070;
 
   /* color text-shadow */
 
@@ -45,44 +32,53 @@
 
   /* background images */
 
-  background-image: url(../images/cover-image-light.png);
+  background-image: url("../images/cover-image-light.png");
 
   /* opacity */
 
   --opacity: 0;
-
 }
 
 @media (prefers-color-scheme: light) {
-
-  * {
-    transition: color .3s, background .3s;
+  .link,
+  .header__theme-menu-button,
+  .header__theme-menu-button_active,
+  .header__title,
+  .header__text,
+  .section-title,
+  .section-card,
+  .card__title,
+  .card__text,
+  .section-card__title,
+  .footer-title {
+    transition:
+      color 0.3s,
+      background 0.3s;
   }
 
-  *::before {
-    transition: border .3s;
+  .decorated-zone::before {
+    transition: border 0.3s;
   }
 
-  *::after {
-    transition: border .3s;
+  .decorated-zone::after {
+    transition: border 0.3s;
   }
 
   .page {
-    background-color: #FFF1F7;
-    background-image: url(../images/cover-image-light.png);
-
+    background-color: #fff1f7;
+    background-image: url("../images/cover-image-light.png");
   }
 
   .decorated-zone {
-      &::before {
-        border-block-start-color: #000028;
-        border-inline-end-color: #000028;
-      }
+    &::before {
+      border-block-start-color: #000028;
+      border-inline-end-color: #000028;
+    }
 
-      &::after {
-        border-block-end-color: #000028;
-        border-inline-start-color: #000028;
-      }
+    &::after {
+      border-block-end-color: #000028;
+      border-inline-start-color: #000028;
+    }
   }
 
   .decor-rec {
@@ -93,12 +89,12 @@
     text-shadow: 2px 2px 0 #ff0070;
   }
 
-  .header__theme-menu-button { 
+  .header__theme-menu-button {
     color: #353430;
   }
 
   .header__title {
-    color: #FFC2E6;
+    color: #ffc2e6;
     text-shadow: #ff0070;
   }
 
@@ -119,16 +115,14 @@
   .card__text {
     color: var(--global-color);
   }
-  
+
   .section-card__title {
     color: #353430;
     background-color: #ff0070;
   }
 
   .footer-title {
-    color: #FFC2E6;
+    color: #ffc2e6;
     text-shadow: 4px 4px 0 #ff0070;
   }
-  
 }
-
