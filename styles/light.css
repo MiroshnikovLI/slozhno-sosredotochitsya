@@ -1,122 +1,91 @@
-/*
+  /*
   Специально для светлой темы при наличии класса.
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
 
 .page.theme_light {
-  /* сохраните этот селектор в приведённом виде.
+    /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
 
-  /* decoration color */
+    /* decoration color */
 
   --decor-line: #000028;
 
-  /* color fonts */
+    /* color fonts */
 
   --global-color: #353430;
   --primery-color: #353430;
-  --accent-color: #000028;
+  --accent-color: #353430;
   --primery-accent-color: #ffc2e6;
 
-  /* color background */
+    /* color background */
 
   --bg-global-color: #fff1f7;
   --bg-accent-color: #FF8DCB;
 
-  /* color text-shadow */
+    /* color border */
 
-  --tx-sh-accent-color: #ff0070;
+  --bd-hover-color: rgba(50, 49, 45, 0.4); 
 
-  /* background images */
+    /* color box-shadow */
+
+  --sh-accent-color: #ff0070;
+
+    /* color text-shadow */
+
+  --tx-sh-accent-color: #ff8dcb;
+
+    /* background images */
 
   background-image: url("../images/cover-image-light.png");
 
-  /* opacity */
+    /* opacity */
 
   --opacity: 0;
 }
 
 @media (prefers-color-scheme: light) {
-  .link,
-  .header__theme-menu-button,
-  .header__theme-menu-button_active,
-  .header__title,
-  .header__text,
-  .section-title,
-  .section-card,
-  .card__title,
-  .card__text,
-  .section-card__title,
-  .footer-title {
-    transition:
-      color 0.3s,
-      background 0.3s;
-  }
 
   .page {
-    background-color: #fff1f7;
-    background-image: url("../images/cover-image-light.png");
-  }
+    
+    /* decoration color */
 
-  .decorated-zone {
-    &::before {
-      border-block-start-color: #000028;
-      border-inline-end-color: #000028;
-      transition: border 0.3s;
-    }
+  --decor-line: #000028;
 
-    &::after {
-      border-block-end-color: #000028;
-      border-inline-start-color: #000028;
-      transition: border 0.3s;
-    }
-  }
+    /* color fonts */
 
-  .decor-rec {
-    opacity: 0;
-  }
+  --global-color: #353430;
+  --primery-color: #353430;
+  --accent-color: #353430;
+  --primery-accent-color: #ffc2e6;
 
-  .link {
-    text-shadow: 2px 2px 0 #ff0070;
-  }
+    /* color background */
 
-  .header__theme-menu-button {
-    color: #353430;
-  }
+  --bg-global-color: #fff1f7;
+  --bg-accent-color: #FF8DCB;
 
-  .header__title {
-    color: #ffc2e6;
-    text-shadow: #ff0070;
-  }
+    /* color border */
 
-  .header__text {
-    color: #353430;
-    background-color: #ff0070;
-  }
+  --bd-hover-color: rgba(50, 49, 45, 0.4); 
 
-  .section-title {
-    color: #353430;
-  }
+    /* color box-shadow */
 
-  .card__title {
-    color: #000028;
-    background-color: #ff0070;
-  }
+  --sh-accent-color: #ff0070;
 
-  .card__text {
-    color: var(--global-color);
-  }
+    /* color text-shadow */
 
-  .section-card__title {
-    color: #353430;
-    background-color: #ff0070;
-  }
+  --tx-sh-accent-color: #ff0070;
 
-  .footer-title {
-    color: #ffc2e6;
-    text-shadow: 4px 4px 0 #ff0070;
+    /* background images */
+
+  background-image: url("../images/cover-image-light.png");
+
+    /* opacity */
+
+  --opacity: 0;
+
   }
 }

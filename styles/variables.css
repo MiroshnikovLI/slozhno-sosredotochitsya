@@ -1,53 +1,53 @@
-/*
+  /*
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
 :root {
 
-  /* decoration color */
+    /* decoration color */
 
   --rec-color: #ff0070;
   --decor-line: #ff0070;
 
-  /* color fonts */
+    /* color fonts */
 
   --global-color: #f1b2ce;
   --primery-color: #ff0070;
   --accent-color: #000028;
   --primery-accent-color: #db00ff;
 
-  /* color background */
+    /* color background */
 
   --bg-global-color: #000028;
   --bg-accent-color: #ff0070;
 
-  /* color border */
+    /* color border */
 
-  --bd-accent-color: #ff0070;
+  --bd-hover-color: rgba(255, 0, 112, 0.4); 
 
-  /* color box-shadow */
+    /* color box-shadow */
 
   --sh-accent-color: #ff0070;
 
-  /* color text-shadow */
+    /* color text-shadow */
 
   --tx-sh-accent-color: #ff0070;
 
-  /* font-size */
+    /* font-size */
 
   --s-font-size: 18px;
   --xl-font-size: 116px;
 
-  /* line-height */
+    /* line-height */
 
   --s-lh-size: 23.4px;
   --xl-lh-size: 95.7px;
 
-  /* opacity */
+    /* opacity */
 
   --opacity: 1;
 
-  /* padding size */
+    /* padding size */
 
   --global-padding: clamp(0.625rem, 0.0301rem + 2.5381vw, 1.25rem);
 
