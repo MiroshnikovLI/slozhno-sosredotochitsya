@@ -63,7 +63,7 @@
   display: inline-block;
   position: absolute;
   inline-size: 52px;
-  top: clamp(0.625rem, 0.0301rem + 2.5381vw, 1.25rem);
+  top: calc(clamp(0.625rem, 0.0301rem + 2.5381vw, 1.25rem) + 4px);
   right: calc(clamp(0.625rem, 0.0301rem + 2.5381vw, 1.25rem) + 9px);
   opacity: var(--opacity, 1);
   transition: opacity 0.7s;
@@ -78,7 +78,7 @@
   &::after {
     content: '';
     position: absolute;
-    top: 7px;
+    top: 6px;
     right: 0;
     inline-size: 9px;
     block-size: 9px;
@@ -274,25 +274,6 @@
   text-shadow: 2px 2px 0 var(--tx-sh-accent-color, #ff0070);
 }
 
-  /* for Yandex browser */
-
-@media all and (hover: hover) {
-  .link:hover {
-    border-block-end: 1px;
-    border-block-end-style: solid;
-    border-block-end-color: inherit;
-  }
-
-  .header__theme-menu-button:hover {
-    cursor: pointer;
-    border: 1px;
-    border-style: solid;
-    border-color: var(--bd-hover-color, inherit);
-  }
-}
-
-  /* for all other browsers  */
-
 @media (hover: hover) {
   .link:hover {
     border-block-end: 1px;
@@ -300,7 +281,7 @@
     border-block-end-color: inherit;
   }
 
-  .header__theme-menu-button:hover {
+  .header__theme-menu-button:hover:not(.header__theme-menu-button_active) {
     cursor: pointer;
     border: 1px;
     border-style: solid;
@@ -359,7 +340,6 @@
   }
 
 }
-
 
 @media (width >= 500px) and (width <= 768px) {
 

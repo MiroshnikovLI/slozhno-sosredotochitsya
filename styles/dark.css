@@ -50,7 +50,7 @@
 
 
 
-.page {
+.page, .page:has(.header__theme-menu-button_type_dark:hover:not(.header__theme-menu-button_active)) {
 
     /* decoration color */
 
