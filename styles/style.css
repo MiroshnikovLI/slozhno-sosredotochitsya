@@ -270,7 +270,7 @@
   color: var(--primery-accent-color, #db00ff);
   font-size: var(--xl-font-size, 116px);
   font-weight: 700;
-  line-height: var(--xl-lh-size, 95.7px);
+  line-height: clamp(5.98125rem, 5.7849rem + 0.8376vw, 6.1875rem);
   text-shadow: 2px 2px 0 var(--tx-sh-accent-color, #ff0070);
 }
 
@@ -389,11 +389,6 @@
     grid-template-rows: 193px 232px 316px;
   }
 
-    /* footer */
-
-  .footer {
-    margin-block-start: clamp(0rem, -1.1897rem + 5.0761vw, 1.25rem);
-  }
 }
 
 @media (width >= 769px) {
@@ -442,5 +437,6 @@
 
   .footer-title {
     font-size: clamp(7.5rem, 0.5895rem + 14.3969vw, 9.8125rem);
+    line-height: clamp(6.1875rem, 0.4854rem + 11.8794vw, 8.095625rem);
   }
 }
