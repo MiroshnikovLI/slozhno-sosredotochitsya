@@ -159,7 +159,7 @@
   inline-size: 100%;
   block-size: 100%;
   text-align: center;
-  color: var(--primery-color, #ff0070);
+  color: var(--bottom-color, #ff0070);
   line-height: 22px;
   text-transform: lowercase;
   background-color: transparent;
@@ -285,8 +285,21 @@
     cursor: pointer;
     border: 1px;
     border-style: solid;
-    border-color: var(--bd-hover-color, inherit);
+    border-color: var(--bottom-hover-color, inherit);
   }
+  
+  /*
+  .page.theme_light .header__theme-menu-button_type_dark:hover {
+    --bottom-color: #353430;
+    --bottom-hover-color: rgba(50, 49, 45, 0.4);
+  }
+  
+  .page.theme_dark .header__theme-menu-button_type_light:hover,
+  .page.theme_auto .header__theme-menu-button_type_light:hover {
+    --bottom-color: #ff0070;
+    --bottom-hover-color: rgba(255, 0, 112, 0.4);
+  }
+  */
 }
 
 @media (width >= 500px) {
@@ -308,10 +321,18 @@
     inline-size: 100%;
     block-size: 100%;
   }
+
+  .section {
+    grid-template-columns: 1fr 2fr;
+  }
   
   .section-card--grid-column {
     grid-row-start: 2;
     grid-column: 1 / end;
+  }
+
+  .section-card__list--img-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .section-card__list__items--img-a {
@@ -339,6 +360,10 @@
     grid-row: 3 / 4;
   }
 
+  .footer {
+    margin-block-start: clamp(0rem, -1.1897rem + 5.0761vw, 1.25rem);
+ }
+
 }
 
 @media (width >= 500px) and (width <= 768px) {
@@ -360,12 +385,7 @@
 
     /* main */
 
-  .section {
-    grid-template-columns: 1fr 2fr;
-  }
-
   .section-card__list--img-grid {
-    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 193px 232px 316px;
   }
 
@@ -407,7 +427,6 @@
     /* main */
 
   .section {
-    grid-template-columns: 1fr 2fr;
     column-gap: 10px;
   }
 
@@ -416,15 +435,10 @@
   }
 
   .section-card__list--img-grid {
-    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 260px 317px 431px;
   }
 
     /* footer */
-
-  .footer {
-     margin-block-start: clamp(0rem, -1.1897rem + 5.0761vw, 1.25rem);
-  }
 
   .footer-title {
     font-size: clamp(7.5rem, 0.5895rem + 14.3969vw, 9.8125rem);

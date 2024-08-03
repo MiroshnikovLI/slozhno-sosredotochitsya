@@ -4,11 +4,27 @@
   переключая тему
 */
 
+/* Такая реализация должна больше подходить по тз
+
+style.css строка 291-302;
+darc.css строка 13-15 и 108-118;
+light.css строка 14-16;
+*/
+
+/*
+.page:has(.header__theme-menu-button_type_dark:hover:not(.header__theme-menu-button_active)),
+*/
+
 .page.theme_dark {
     /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+
+  /* bottom + bottom:hover */
+
+  --bottom-color: #ff0070;
+  --bottom-hover-color: rgba(255, 0, 112, 0.4);
 
      /* decoration color */
 
@@ -27,10 +43,6 @@
   --bg-global-color: #000028;
   --bg-accent-color: #ff0070;
 
-    /* color border */
-
-  --bd-hover-color: rgba(255, 0, 112, 0.4); 
-
     /* color box-shadow */
 
   --sh-accent-color: #ff0070;
@@ -46,47 +58,4 @@
     /* opacity */
 
   --opacity: 1;
-}
-
-
-
-.page, .page:has(.header__theme-menu-button_type_dark:hover:not(.header__theme-menu-button_active)) {
-
-    /* decoration color */
-
-  --rec-color: #ff0070;
-  --decor-line: #ff0070;
-
-    /* color fonts */
-
-  --global-color: #f1b2ce;
-  --primery-color: #ff0070;
-  --accent-color: #000028;
-  --primery-accent-color: #db00ff;
-
-    /* color background */
-
-  --bg-global-color: #000028;
-  --bg-accent-color: #ff0070;
-
-    /* color border */
-
-  --bd-hover-color: rgba(255, 0, 112, 0.4); 
-
-    /* color box-shadow */
-
-  --sh-accent-color: #ff0070;
-
-    /* color text-shadow */
-
-  --tx-sh-accent-color: #ff0070;
-
-    /* bacground images */
-
-  background-image: url("../images/cover-image-dark.png");
-
-    /* opacity */
-
-  --opacity: 1;
-
 }

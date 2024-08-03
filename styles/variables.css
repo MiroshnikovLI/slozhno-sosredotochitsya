@@ -4,6 +4,11 @@
 */
 :root {
 
+    /* bottom + bottom:hover */
+
+  --bottom-color: #ff0070;
+  --bottom-hover-color: rgba(255, 0, 112, 0.4);
+  
     /* decoration color */
 
   --rec-color: #ff0070;
@@ -20,10 +25,6 @@
 
   --bg-global-color: #000028;
   --bg-accent-color: #ff0070;
-
-    /* color border */
-
-  --bd-hover-color: rgba(255, 0, 112, 0.4); 
 
     /* color box-shadow */
 
