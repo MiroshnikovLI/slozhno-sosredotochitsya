@@ -138,6 +138,7 @@
   grid-template-rows: 0.7fr 1.1fr 1fr;
   padding: var(--global-padding, 10px);
   block-size: 100vh;
+  min-block-size: 668px;
 }
 
 .header__theme-menu {
@@ -288,7 +289,6 @@
     border-color: var(--bottom-hover-color, inherit);
   }
   
-  /*
   .page.theme_light .header__theme-menu-button_type_dark:hover {
     --bottom-color: #353430;
     --bottom-hover-color: rgba(50, 49, 45, 0.4);
@@ -299,7 +299,6 @@
     --bottom-color: #ff0070;
     --bottom-hover-color: rgba(255, 0, 112, 0.4);
   }
-  */
 }
 
 @media (width >= 500px) {
@@ -371,6 +370,7 @@
     /* header */
 
   .header {
+    min-block-size: 1024px;
     grid-template-rows: 1.2fr 1.2fr 2fr;
   }
 
@@ -397,6 +397,7 @@
 
   .header {
     grid-template-rows: 1fr 2fr 1fr;
+    min-block-size: 768px;
   }
 
   .header__theme-menu {

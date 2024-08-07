@@ -4,18 +4,7 @@
   переключая тему
 */
 
-/* Такая реализация должна больше подходить по тз
-
-style.css строка 291-302;
-darc.css строка 13-15 и 108-118;
-light.css строка 14-16;
-*/
-
-/*
 .page:has(.header__theme-menu-button_type_light:hover:not(.header__theme-menu-button_active)),
-*/
-
-
 .page.theme_light {
     /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
@@ -106,7 +95,7 @@ light.css строка 14-16;
   --opacity: 0;
 
   }
-  /*
+
   .page.theme_auto .header__theme-menu-button_type_dark:hover {
     --bottom-color: #353430;
     --bottom-hover-color: rgba(50, 49, 45, 0.4);
@@ -116,5 +105,4 @@ light.css строка 14-16;
     --bottom-color: #353430;
     --bottom-hover-color: rgba(50, 49, 45, 0.4);
   }
-  */
 }

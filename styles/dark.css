@@ -4,17 +4,7 @@
   переключая тему
 */
 
-/* Такая реализация должна больше подходить по тз
-
-style.css строка 291-302;
-darc.css строка 13-15 и 108-118;
-light.css строка 14-16;
-*/
-
-/*
 .page:has(.header__theme-menu-button_type_dark:hover:not(.header__theme-menu-button_active)),
-*/
-
 .page.theme_dark {
     /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
